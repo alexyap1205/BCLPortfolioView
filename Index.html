@@ -1,0 +1,78 @@
+<html>
+<head>
+    <base href="/">
+    <title>BCL Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body>
+
+<div id="all">
+    <div class="container-fluid">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <!--   *** SIDEBAR ***-->
+            <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+                <div class="sidebar-content">
+                    <h1 class="sidebar-heading"> <a href="#">BCL Photography</a></h1>
+                    <p class="sidebar-p">Kids photography at its finest. </p>
+                    <p class="sidebar-p">Located at the heart of Manila. </p>
+                    <ul class="sidebar-menu">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get in touch</a></li>
+                    </ul>
+                    <p class="social"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+                    <div class="copyright">
+                        <p class="credit">&copy;2016 BCL Photography | Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a></p>
+                        <!-- Please do not remove the backlink to us, unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)        -->
+
+                    </div>
+                </div>
+            </div>
+            <!--   *** SIDEBAR END ***  -->
+            <!--   *** PORTFOLIO ***-->
+            <my-app>Loading...</my-app>
+            <!--   *** PORTFOLIO END ***
+            -->
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"> </script>
+<script src="js/jquery.cookie.js"> </script>
+<script src="js/ekko-lightbox.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/front.js"></script>
+
+</body>
+</html>
