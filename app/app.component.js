@@ -9,10 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        this.router = router;
         this.title = 'BCL Photography';
     }
+    AppComponent.prototype.onReserve = function (event) {
+        event.preventDefault();
+        this.router.navigate(['reservation']);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
@@ -20,7 +26,7 @@ var AppComponent = (function () {
             styleUrls: ['css/bootstrap.min.css', 'https://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic', 'css/font-awesome.min.css',
                 'css/owl.carousel.css', 'css/owl.theme.css', 'css/style.default.css', 'css/custom.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], AppComponent);
     return AppComponent;
 }());

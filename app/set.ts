@@ -3,4 +3,5 @@ export class Set {
     Cover: string;
     Title: string;
     Description: string;
+    Images: string[];
 }

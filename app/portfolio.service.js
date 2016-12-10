@@ -12,16 +12,28 @@ var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/toPromise');
 // const
-var serverAddress = 'http://localhost:5000/';
+var serverAddress = 'http://alexyap1205-001-site3.gtempurl.com/service/';
 var featuredPortfolioUrl = serverAddress + 'api/portfolio/featured';
+var setItemHeaderUrl = serverAddress + 'api/portfolio/item/';
 var PortfolioService = (function () {
     function PortfolioService(http) {
         this.http = http;
         this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
     }
     PortfolioService.prototype.getFeatured = function () {
+        console.debug('calling ' + featuredPortfolioUrl);
         return this.http.get(featuredPortfolioUrl).toPromise()
-            .then(function (response) { return response.json(); })
+            .then(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    PortfolioService.prototype.getItem = function (id) {
+        console.debug('calling ' + setItemHeaderUrl + id);
+        return this.http.get(setItemHeaderUrl + id).toPromise()
+            .then(function (response) {
+            return response.json();
+        })
             .catch(this.handleError);
     };
     PortfolioService.prototype.handleError = function (error) {

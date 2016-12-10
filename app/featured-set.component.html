@@ -1,1 +1,129 @@
-<h1>Featured</h1>
+<div class="grid">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div *ngIf="set1" class="box-masonry"><a href (click)="open($event, set1.folder)" title="" class="box-masonry-image with-hover-overlay"><img src="{{set1.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-text">
+                <h4> <a href (click)="open($event, set1.folder)">{{set1.title}}</a></h4>
+            </div>
+            <div class="box-masonry-hover-text-header">
+                <div class="box-masonry-desription">
+                    <p>{{set1.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div *ngIf="set2" class="box-masonry"><a href (click)="open($event, set2.folder)" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="{{set2.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-text">
+                <h4> <a href (click)="open($event, set2.folder)">{{set2.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set2.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div *ngIf="set3" class="box-masonry"><a href (click)="open($event, set3.folder)" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="{{set3.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-text">
+                <h4> <a href (click)="open($event, set3.folder)">{{set3.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set3.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div class="box-masonry">
+            <div class="box-masonry-text">
+                <h4> <a href="#">For the Family</a></h4>
+                <div class="box-masonry-desription">
+                    <p>We pride ourselves to be the best photography service for kids within Metro Manila. If you happen to be near us, do give us a call and we will be glad to give you and your beloved little ones a wonderful time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div *ngIf="set4" class="box-masonry"><a href (click)="open($event, set4.folder)" title="" class="box-masonry-image with-hover-overlay"><img src="{{set4.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-hover-text-header">
+                <h4> <a href (click)="open($event, set4.folder)">{{set4.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set4.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">-->
+        <!--<div class="box-masonry">-->
+            <!--<div class="box-masonry-text">-->
+                <!--<h4> <a href="#">Reserve now</a></h4>-->
+                <!--<div class="box-masonry-desription">-->
+                    <!--<p>Reserve for appointment using our reservation system, or contact us through the channels indicated on the left.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div *ngIf="set5" class="box-masonry"><a href (click)="open($event, set5.folder)" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="{{set5.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-text">
+                <h4> <a href (click)="open($event, set5.folder)">{{set5.title}}</a></h4>
+            </div>
+            <div class="box-masonry-hover-text-header">
+                <div class="box-masonry-desription">
+                    <p>{{set5.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div *ngIf="set6" class="box-masonry"><a href (click)="open($event, set6.folder)" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="{{set6.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-text">
+                <h4> <a href (click)="open($event, set6.folder)">{{set6.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set6.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="set7" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div class="box-masonry"><a href (click)="open($event, set7.folder)" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="{{set7.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-text">
+                <h4> <a href (click)="open($event, set7.folder)">{{set7.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set7.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="set8" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div class="box-masonry"><a href (click)="open($event, set8.folder)" title="" class="box-masonry-image with-hover-overlay"><img src="{{set8.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-hover-text-header">
+                <h4> <a href (click)="open($event, set8.folder)">{{set8.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set8.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="set9" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+        <div class="box-masonry"><a href (click)="open($event, set9.folder)" title="" class="box-masonry-image with-hover-overlay"><img src="{{set9.cover}}" alt="" class="img-responsive"></a>
+            <div class="box-masonry-hover-text-header">
+                <h4> <a href (click)="open($event, set9.folder)">{{set9.title}}</a></h4>
+                <div class="box-masonry-desription">
+                    <p>{{set9.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div *ngFor="let set of sets" class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">-->
+        <!--<div class="box-masonry"><a href="#" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="{{set.cover}}" alt="" class="img-responsive"></a>-->
+            <!--<div class="box-masonry-text">-->
+                <!--<h4> <a href="#">{{set.title}}</a></h4>-->
+            <!--</div>-->
+            <!--<div class="box-masonry-hover-text-header">-->
+                <!--<div class="box-masonry-desription">-->
+                    <!--<p>{{set.description}}</p>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+</div>

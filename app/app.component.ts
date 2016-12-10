@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 import {PortfolioService} from './portfolio.service';
+import {DateService} from './dates.service';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+
+import {ReservationComponent} from './reservation.component';
 
 @Component({
     selector: 'my-app',
@@ -9,4 +15,14 @@ import {PortfolioService} from './portfolio.service';
 })
 export class AppComponent {
     title = 'BCL Photography';
+
+    constructor(private router: Router) {
+
+    }
+
+    onReserve(event)
+    {
+        event.preventDefault();
+        this.router.navigate(['reservation'])
+    }
 }

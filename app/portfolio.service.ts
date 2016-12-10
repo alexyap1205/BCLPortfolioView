@@ -6,8 +6,9 @@ import 'rxjs/add/operator/toPromise';
 import {Set} from './set';
 
 // const
-const serverAddress = 'http://localhost:5000/';
+const serverAddress = 'http://alexyap1205-001-site3.gtempurl.com/service/';
 const featuredPortfolioUrl = serverAddress + 'api/portfolio/featured';
+const setItemHeaderUrl = serverAddress + 'api/portfolio/item/';
 
 @Injectable()
 export class PortfolioService {
@@ -17,8 +18,20 @@ export class PortfolioService {
     }
 
     getFeatured() : Promise<Set[]>{
+        console.debug('calling ' + featuredPortfolioUrl);
         return this.http.get(featuredPortfolioUrl).toPromise()
-            .then(response => response.json() as Set[])
+            .then(response => {
+                return response.json() as Set[];
+            })
+            .catch(this.handleError);
+    }
+
+    getItem(id: string) : Promise<Set>{
+        console.debug('calling ' + setItemHeaderUrl + id);
+        return this.http.get(setItemHeaderUrl + id).toPromise()
+            .then(response => {
+                return response.json() as Set;
+            })
             .catch(this.handleError);
     }
 

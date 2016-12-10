@@ -1,0 +1,9 @@
+<ngb-carousel *ngIf="set">
+    <template *ngFor="let image of set.images" ngbSlide>
+        <img src="{{image}}" alt="{{set.title}}" class="img-responsive">
+        <div class="carousel-caption">
+            <h3>{{set.title}}</h3>
+            <p>{{set.description}}</p>
+        </div>
+    </template>
+</ngb-carousel>
